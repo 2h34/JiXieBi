@@ -113,7 +113,7 @@ static void BlockArm_SetAutoTarget(BlockArmTarget_t target)
         case BLOCK_ARM_TARGET_HIGH_PICK_READY:
             block_arm.fine_adjust_profile = BLOCK_ARM_FINE_PROFILE_HIGH_PICK;
             /* TODO: 写入高位取块姿态对应的 DJI / ZDrive 目标。 */
-            block_arm.dji_target_position = -28.0f;  
+            block_arm.dji_target_position = -21.0f;  
             block_arm.zdrive_target_position = 105.0f;
             break;
 
@@ -134,7 +134,7 @@ static void BlockArm_SetAutoTarget(BlockArmTarget_t target)
         case BLOCK_ARM_TARGET_PLACE_LEVEL1_READY:
             block_arm.fine_adjust_profile = BLOCK_ARM_FINE_PROFILE_PLACE_LEVEL1;
             /* TODO: 写入第一层放块姿态对应的 DJI / ZDrive 目标。 */
-            block_arm.dji_target_position = 45.0f;  
+            block_arm.dji_target_position = 49.0f;  
             block_arm.zdrive_target_position = 50.0f;
             break;
 

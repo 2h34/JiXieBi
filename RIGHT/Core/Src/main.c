@@ -107,14 +107,14 @@ int main(void)
   MX_DMA_Init();
   MX_TIM2_Init();
   MX_TIM3_Init();
-  MX_USART1_UART_Init();
+  // MX_USART1_UART_Init();
   MX_CAN1_Init();
-  MX_USART2_UART_Init();
+  // MX_USART2_UART_Init();
   MX_CAN2_Init();
   /* USER CODE BEGIN 2 */
   Beep_Init();
   CAN_InitSendQueue();
-  UART_Start_Recieve();
+  // UART_Start_Recieve();
   solenoid_init(1);
   #if USE_DJ
   DJmotor_Init();

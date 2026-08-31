@@ -270,6 +270,16 @@
           <WinNumber>1</WinNumber>
           <ItemText>flag7</ItemText>
         </Ww>
+        <Ww>
+          <count>24</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>\\f4_show\../Mechanism/Src/BlockArm.c\block_arm</ItemText>
+        </Ww>
+        <Ww>
+          <count>25</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>\\f4_show\../Mechanism/Src/BlockArm.c\block_arm</ItemText>
+        </Ww>
       </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
