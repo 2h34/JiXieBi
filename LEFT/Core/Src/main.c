@@ -124,7 +124,7 @@ int main(void)
   #endif
 
   /* 机构层 */
-  BlockArm_Init(&DJmotor[BLOCK_ARM_DJI_INDEX], &Zmotor[BLOCK_ARM_ZDRIVE_INDEX]);
+  BlockArm_Init(&DJmotor[1], &Zmotor[BLOCK_ARM_ZDRIVE_INDEX]);
   BlockVacuum_Init();
 
 /* 任务层 */

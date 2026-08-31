@@ -15,10 +15,10 @@ void TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     if(htim->Instance == TIM2){
         #if USE_ZMDR
             ZdriveDequeue((uint8_t)MOTOR_ZDRIVE_CAN_BUS_1);
-            #if MOTOR_ZDRIVE_CAN_BUS_2 != MOTOR_ZDRIVE_CAN_BUS_1
-            ZdriveDequeue((uint8_t)MOTOR_ZDRIVE_CAN_BUS_2);
-            #endif
+            // #if MOTOR_ZDRIVE_CAN_BUS_2 != MOTOR_ZDRIVE_CAN_BUS_1
             // ZdriveDequeue((uint8_t)MOTOR_ZDRIVE_CAN_BUS_2);
+            // #endif
+            ZdriveDequeue((uint8_t)MOTOR_ZDRIVE_CAN_BUS_2);
         #endif        
 
         #if USE_DJ
