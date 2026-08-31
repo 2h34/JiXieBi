@@ -21,9 +21,17 @@ void TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
             ZdriveDequeue((uint8_t)MOTOR_ZDRIVE_CAN_BUS_2);
         #endif        
 
-        #if USE_DJ
+        static uint8_t cnt = 0;
+        if (++cnt >= 2)
+        {
+            cnt = 0;
+            #if USE_DJ
             DJmotor_Func();
-        #endif
+            #endif
+        }
+        // #if USE_DJ
+        //     DJmotor_Func();
+        // #endif
         static uint8_t Func_cnt = 0;
         if (++Func_cnt >= 5)
         {
