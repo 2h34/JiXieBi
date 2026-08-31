@@ -23,7 +23,7 @@ extern "C"
 #define M3508_RATIO MOTOR_M3508_REDUCTION_RATIO
 #define Zero_Distance 15
 
-#define BLOCK_ARM_DJI_INDEX          2U
+#define BLOCK_ARM_DJI_INDEX          1U
 
 
     typedef enum

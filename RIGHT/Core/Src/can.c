@@ -133,7 +133,7 @@ void MX_CAN2_Init(void)
   CAN_FilterTypeDef CAN_FilterConfig;// 定义过滤器
   /*----------------------------------- 过滤器1 ------------------------------*/
   /* DJI 电机在 CAN1(MOTOR_DJI_CAN_BUS=0)，此过滤器在 CAN2 匹配不到任何帧，停用 */
-  CAN_FilterConfig.FilterActivation = ENABLE;                    // 激活过滤器
+  CAN_FilterConfig.FilterActivation = DISABLE;                    // 激活过滤器
   CAN_FilterConfig.SlaveStartFilterBank = 14;                     // CAN1 CAN2的过滤器分割线，0-13给CAN1，14-27给CAN2
   CAN_FilterConfig.FilterBank = 14;                                // 使用第14个筛选器组
   CAN_FilterConfig.FilterScale = CAN_FILTERSCALE_16BIT;           // 位宽
